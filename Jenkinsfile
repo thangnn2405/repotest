@@ -10,7 +10,7 @@ pipeline {
         IMAGE_REPO_NAME="860478206589.dkr.ecr.us-west-2.amazonaws.com/repo"
         IMAGE_TAG="${env.BUILD_ID}"
         REPOSITORY_URI = "${AWS_ACCOUNT_ID}.dkr.ecr.${AWS_DEFAULT_REGION}.amazonaws.com/${IMAGE_REPO_NAME}"
-	registryCredential = "AKIA4QWD7OJ6VXUZ72B4"
+	registryCredential = "arn:aws:iam::860478206589:user/cicd-user"
     }
    
     stages {
